@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  @apply font-poppins; 
+  overflow-x: hidden;
+}
+
+.half-underline {
+    position: relative;
+    overflow: hidden; /* Ensure the underline doesn't overflow */
+  }
+  
+  .half-underline::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px; /* Adjust thickness of the underline */
+    background-color: #ef6603; /* Set the underline color */
+    width: 100%; /* Full width initially */
+    transform: translateX(-100%); /* Start hidden on the left */
+    transition: transform 0.3s ease;
+  }
+  
+  .half-underline:hover::after {
+    transform: translateX(0); /* Move to full width on hover */
+    width: 50%; /* Adjust to cover only half */
+  }
+  
+  /* Keep the underline visible when focused */
+  .half-underline:focus::after,
+  .half-underline:active::after {
+    transform: translateX(0);
+    width: 50%;
+  }
+  
+  /* Remove outline for a cleaner look (optional) */
+  .half-underline:focus {
+    outline: none; /* Prevent the default outline from showing */
+  }
+  .color{
+    color:#ef6603;
+  }
+
+  /* Hide scrollbar for WebKit browsers (Chrome, Safari) */
+.marquee-container::-webkit-scrollbar {
+  display: none; /* Hide scrollbar */
+}
+
+/* Hide scrollbar for Firefox */
+.marquee-container {
+  scrollbar-width: none; /* Hide scrollbar */
+}
+
+.marquee-container {
+  overflow: hidden; 
+}
