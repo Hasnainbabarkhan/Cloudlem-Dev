@@ -103,6 +103,10 @@ function Footer() {
           <p className="text-gray-600 text-sm">
             Copyright © Cloudlem. All rights reserved 
           </p>
+<<<<<<< HEAD
+=======
+          <p className="text-gray-600 text-sm">Developed by Hasnain babar</p>
+>>>>>>> 1428cb6 (developing)
         </div>
       </div>
     </footer>

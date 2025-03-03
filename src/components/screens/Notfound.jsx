@@ -35,3 +35,7 @@ const Notfound = () => {
 };
 
 export default Notfound;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1428cb6 (developing)

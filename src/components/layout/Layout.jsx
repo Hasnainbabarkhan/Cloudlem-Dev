@@ -7,6 +7,10 @@ import About from './AboutHome';
 import Services from './Services';
 import TechStack from './Stacks';
 import Carousel from './Reviews';
+<<<<<<< HEAD
+=======
+import ContactForm from "./Contact";
+>>>>>>> 1428cb6 (developing)
 
 const Layout = () => {
   const location = useLocation();
@@ -17,7 +21,11 @@ const Layout = () => {
         <Navbar />
       </header>
 
+<<<<<<< HEAD
       <main className="flex-grow p-4">
+=======
+      <main className="flex-grow ">
+>>>>>>> 1428cb6 (developing)
         <Outlet />
   
         {location.pathname === '/' && <Main />}
@@ -25,6 +33,10 @@ const Layout = () => {
         {location.pathname === '/' && <Services />}
         {location.pathname === '/' && <TechStack />}
         {location.pathname === '/' && <Carousel />}
+<<<<<<< HEAD
+=======
+        {location.pathname === '/' && <ContactForm />}
+>>>>>>> 1428cb6 (developing)
       </main>
 
       <footer>

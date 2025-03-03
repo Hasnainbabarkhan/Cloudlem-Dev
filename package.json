@@ -10,6 +10,10 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "classnames": "^2.5.1",
+<<<<<<< HEAD
+=======
+    "emailjs-com": "^3.2.0",
+>>>>>>> 1428cb6 (developing)
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-fast-marquee": "^1.6.5",

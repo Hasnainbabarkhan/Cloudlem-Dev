@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 
+<<<<<<< HEAD
 // Mock data for the reviews
+=======
+>>>>>>> 1428cb6 (developing)
 const reviews = [
   {
     name: "Jonh V. Bellamy",
@@ -16,13 +19,17 @@ const reviews = [
     review:
       "Working with DevOps Prodigy was fantastic. The team exceeded our expectations in delivering solutions on time and within budget. We highly recommend them!",
   },
+<<<<<<< HEAD
   // Add more reviews as needed
+=======
+>>>>>>> 1428cb6 (developing)
 ];
 
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const goToPrevious = () => {
+<<<<<<< HEAD
     setCurrentIndex((prevIndex) => (prevIndex === 0 ? reviews.length - 1 : prevIndex - 1));
   };
 
@@ -34,6 +41,21 @@ const Carousel = () => {
     // Outer div that takes the full width and has background color
     <div className="w-full bg-[#F4F4F4]">
       {/* Centered container inside with fixed max-width */}
+=======
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? reviews.length - 1 : prevIndex - 1
+    );
+  };
+
+  const goToNext = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === reviews.length - 1 ? 0 : prevIndex + 1
+    );
+  };
+
+  return (
+    <div className="w-full bg-[#F4F4F4]">
+>>>>>>> 1428cb6 (developing)
       <div className="container mx-auto px-4 py-10">
         <h2 className="text-4xl text-center mb-6">
           Client <span className="text-orange-500 font-semibold">Reviews</span>
@@ -46,8 +68,12 @@ const Carousel = () => {
         </p>
 
         <div className="relative flex items-center justify-center">
+<<<<<<< HEAD
           {/* Review Card */}
           <div className="bg-green-900 shadow-lg rounded-lg p-8 text-center max-w-3xl">
+=======
+          <div className="bg-green-500 shadow-lg rounded-lg p-8 text-center max-w-3xl">
+>>>>>>> 1428cb6 (developing)
             <p className="text-white text-lg mb-6 leading-relaxed">
               {reviews[currentIndex].review}
             </p>
@@ -59,7 +85,13 @@ const Carousel = () => {
                 className="w-16 h-16 rounded-full object-cover border-4 border-white shadow-lg"
               />
             </div>
+<<<<<<< HEAD
             <h4 className="mt-2 font-semibold text-lg">{reviews[currentIndex].name}</h4>
+=======
+            <h4 className="mt-2 font-semibold text-lg">
+              {reviews[currentIndex].name}
+            </h4>
+>>>>>>> 1428cb6 (developing)
             <p className="text-white">{reviews[currentIndex].role}</p>
 
             {/* Static Rating Stars */}
@@ -69,12 +101,21 @@ const Carousel = () => {
                   key={i}
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
+<<<<<<< HEAD
                   fill="currentColor"
                   className="w-5 h-5 text-yellow-400"
                 >
                   <path
                     fillRule="evenodd"
                     d="M12 2.25a.75.75 0 01.69.482l2.205 5.763 6.026.439a.75.75 0 01.434 1.307l-4.579 4.034 1.471 5.828a.75.75 0 01-1.137.8L12 17.302l-5.11 3.602a.75.75 0 01-1.137-.8l1.47-5.828-4.578-4.034a.75.75 0 01.434-1.307l6.026-.439 2.205-5.763A.75.75 0 0112 2.25zm0 1.858L9.986 9.53a.75.75 0 01-.65.462l-5.277.384 4.002 3.526a.75.75 0 01.233.732l-1.2 4.755 4.168-2.938a.75.75 0 01.847 0l4.167 2.938-1.2-4.755a.75.75 0 01.233-.732l4.002-3.526-5.277-.384a.75.75 0 01-.65-.462L12 4.108z"
+=======
+                  fill="#F97316"
+                  className="w-6 h-6"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M12 2.25a.75.75 0 01.69.482l2.205 5.763 6.026.439a.75.75 0 01.434 1.307l-4.579 4.034 1.471 5.828a.75.75 0 01-1.137.8L12 17.302l-5.11 3.602a.75.75 0 01-1.137-.8l1.47-5.828-4.578-4.034a.75.75 0 01.434-1.307l6.026-.439 2.205-5.763A.75.75 0 0112 2.25z"
+>>>>>>> 1428cb6 (developing)
                     clipRule="evenodd"
                   />
                 </svg>

@@ -54,7 +54,10 @@ body {
 .marquee-container {
   scrollbar-width: none; /* Hide scrollbar */
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 1428cb6 (developing)
 .marquee-container {
   overflow: hidden; 
 }

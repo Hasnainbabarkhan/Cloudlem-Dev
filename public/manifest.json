@@ -3,17 +3,25 @@
     "name": "Cloudlem App",
     "icons": [
       {
+<<<<<<< HEAD
         "src": "favicon.ico",
         "sizes": "64x64 32x32 24x24 16x16",
         "type": "image/x-icon"
       },
       {
         "src": "logo192.png",
+=======
+        "src": "Logo.png",
+>>>>>>> 1428cb6 (developing)
         "type": "image/png",
         "sizes": "192x192"
       },
       {
+<<<<<<< HEAD
         "src": "logo512.png",
+=======
+        "src": "Logo.png",
+>>>>>>> 1428cb6 (developing)
         "type": "image/png",
         "sizes": "512x512"
       }

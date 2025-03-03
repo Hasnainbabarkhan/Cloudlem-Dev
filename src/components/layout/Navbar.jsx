@@ -14,7 +14,11 @@ function Navbar() {
               <Link to="/" className="text-black text-lg hover: half-underline">
                 Home
               </Link>
+<<<<<<< HEAD
               <Link to="/about" className="text-black text-lg hover: half-underline">
+=======
+              <Link to="/About" className="text-black text-lg hover: half-underline">
+>>>>>>> 1428cb6 (developing)
                 About Us
               </Link>
               <Link
